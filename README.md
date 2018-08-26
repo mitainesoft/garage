@@ -1158,7 +1158,7 @@ curl -X POST -d '' http://192.168.1.83:8050/GarageDoor/testRelay/2
 
     Fix are done in Master
     #Fix build_info.txt
-    VCS->Git->Branches->Checkout v1_stable
+    VCS->Git->Branches->Checkout release
     VCS->Git->Pull
     VCS->Git->Merge
     VCS->Git->Commit
@@ -1175,7 +1175,7 @@ curl -X POST -d '' http://192.168.1.83:8050/GarageDoor/testRelay/2
     su - [git user]
     cd /git/garage
     git status
-    git checkout v1_stable
+    git checkout release
     git pull
     python3 setup.py sdist
     #Package is under dist
