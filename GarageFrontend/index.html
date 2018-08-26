@@ -345,6 +345,7 @@
 
                             if (/LOCK/.test(parseResponseArray[i][3])) {
                                 $('#' + garagecmdlabel).addClass('lockstatusdoorbutton');
+                                if (showtimets) document.getElementById('garagelock').innerHTML = garageTimeStatusObject2.LOCK;
                                 $('#garagelock').addClass('lockstatusdoorbutton');
                             } else {
                                 if ($('#garagelock').hasClass('lockstatusdoorbutton')) {
