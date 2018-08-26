@@ -26,8 +26,6 @@
     font-size: 120px;
     font-style: normal;
     margin-left: 20px;
-    /*content: "\A";*/
-    /*white-space: pre-wrap;*/
 }
 
 [class^="F110884-"]:after, [class*=" F110884-"]:after {
@@ -35,8 +33,6 @@
     font-size: 120px;
     font-style: normal;
     margin-left: 20px;
-    /*white-space: pre-line;*/
-    /*content: "\A";*/
 }
 
 .F110884-ambulance-facing-left:before {
