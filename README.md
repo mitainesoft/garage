@@ -167,11 +167,14 @@
         ln -s /opt/mitainesoft/garage/GarageFrontend html
 
      ** Fix garage start boot script
+        su - root
         cd /etc/init.d
         cp /opt/mitainesoft/garage/scripts/garage /etc/init.d
         chmod 755 /etc/init.d/garage
+        update-rc.d  -f garage defaults
         cd /etc/rc3.d
-        ln -s ../init.d/garage S99garage
+        ls -l *garage*
+        #Check for something like S18garage
 
         # Fix it
         cd /etc/init.d
